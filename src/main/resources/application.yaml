@@ -1,1 +1,13 @@
+spring:
+  config:
+    import: optional:credentials.yaml
 
+  datasource:
+    url: jdbc:mysql://localhost:3306
+
+  threads:
+    virtual:
+      enabled: true
+
+server:
+  port: 9080
